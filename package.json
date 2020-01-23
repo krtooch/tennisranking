@@ -4,9 +4,9 @@
   "description": "Ranking For tennis player",
   "main": "index.js",
   "scripts": {
-      "start":"node src/index.js",
-      "test":"jest",
-      "test-watch":"jest --runInBand --watchAll"
+    "start": "node src/index.js",
+    "test": "jest",
+    "test-watch": "jest --runInBand --watchAll"
   },
   "author": "benoit CHESNAIS",
   "license": "ISC",
@@ -16,6 +16,7 @@
     "supertest": "^4.0.2"
   },
   "dependencies": {
+    "axios": "^0.19.2",
     "express": "^4.17.1",
     "lodash": "^4.17.15"
   }
