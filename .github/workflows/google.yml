@@ -45,14 +45,14 @@ jobs:
           -t gcr.io/"$GKE_PROJECT"/"$IMAGE":latest \
           -f Dockerfile.prod .
 
-    # - name: Publish
-    #   run: |
-    #     docker push gcr.io/$GKE_PROJECT/$IMAGE
+    - name: Publish
+      run: |
+        docker push gcr.io/$GKE_PROJECT/$IMAGE
 
-    # - name: Install beta commands and deploy on cloud run
-    #   run: |
-    #     gcloud components install beta --quiet && \
-    #        gcloud beta run deploy "$GKE_CR_SERVICE" --quiet \
-    #       --image gcr.io/"$GKE_PROJECT"/"$IMAGE":"$GITHUB_SHA" \
-    #       --project "$GKE_PROJECT" --region europe-west1 --platform managed
+    - name: Install beta commands and deploy on cloud run
+      run: |
+        gcloud components install beta --quiet && \
+           gcloud beta run deploy "$GKE_CR_SERVICE" --quiet \
+          --image gcr.io/"$GKE_PROJECT"/"$IMAGE":"$GITHUB_SHA" \
+          --project "$GKE_PROJECT" --region europe-west1 --platform managed
         
