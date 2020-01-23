@@ -12,4 +12,4 @@ This Service, is an tannis player ranking API.
 
 it cover task 1, 2 and 3.
 
-Task 4: partially done with a CI/CD with github actions pipeline, but my gcp Account is currently done, so no deploy
+Task 4: done with github action Ci/CD, deploy on CloudRun instance  on [https://tennis-l3l6basgca-ew.a.run.app/players](https://tennis-l3l6basgca-ew.a.run.app/players)
